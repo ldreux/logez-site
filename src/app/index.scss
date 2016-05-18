@@ -32,18 +32,35 @@ body {
 }
 
 .jumbotron {
-	background: transparent !important;
+	background: none;
+
+	.header {
+		background: url('../assets/images/header-background.jpg') !important;
+		color: white;
+		text-shadow: 2px 2px #3c3b38;
+	}
 }
 
 .container {
 	padding: 30px;
-	background-color: whitesmoke;
-	-moz-box-shadow: 5px 5px 10px 0px #000000;
-	-webkit-box-shadow: 5px 5px 10px 0px #000000;
-	-o-box-shadow: 5px 5px 10px 0px #000000;
-	box-shadow: 5px 5px 10px 0px #000000;
-	filter:progid:DXImageTransform.Microsoft.Shadow(color=#000000, Direction=134, Strength=10);
+	background-color: #F2F2F2;
+	-moz-box-shadow: 5px 5px 10px 0px #695645;
+	-o-box-shadow: 5px 5px 10px 0px #695645;
+	box-shadow: 5px 5px 10px 0px #695645;
+	filter:progid:DXImageTransform.Microsoft.Shadow(color=#695645, Direction=134, Strength=10);
+
+	.preview {
+		h2 {
+			margin-top: 0;
+			margin-bottom: 20px;
+		}
+	}
 }
+
+.carousel-control {
+	background: none !important;
+}
+
 
 /**
  *  Do not remove the comments below. It's the markers used by gulp-inject to inject
